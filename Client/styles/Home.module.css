@@ -1,0 +1,97 @@
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.uploadContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.fileInputLabel {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: 2px dashed #3498db;
+    border-radius: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.fileInputLabel:hover {
+    border-color: #2980b9;
+    background-color: #f7f9fc;
+}
+
+.fileInput {
+    display: none;
+}
+
+.fileInputText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #3498db;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.uploadButton {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.uploadButton:hover {
+    background-color: #2980b9;
+}
+
+.uploadButton:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.linkContainer {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fileLink {
+    color: #3498db;
+    word-break: break-all;
+}
